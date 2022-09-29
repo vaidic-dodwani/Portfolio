@@ -1,3 +1,9 @@
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
 .nav-bar {
   display: flex;
   justify-content: space-between;
@@ -25,4 +31,30 @@
   text-align: center;
   padding: 16px;
   text-decoration: none;
+}
+
+.about-me {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+  background-color: blueviolet;
+  position: absolute;
+}
+
+.about-me img {
+  position: relative;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10%;
+}
+
+.about-me p {
+  display: block;
+  font-size: 30px;
+  width: 40%;
+  margin-right: 10%;
 }
