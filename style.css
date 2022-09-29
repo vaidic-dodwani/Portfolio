@@ -1,0 +1,28 @@
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  background-color: aqua;
+}
+
+.nav-bar p {
+  display: block;
+}
+
+.nav-bar ul {
+  display: block;
+  list-style: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar ul li {
+  float: right;
+}
+.nav-bar ul li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
