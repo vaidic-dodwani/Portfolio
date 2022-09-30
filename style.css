@@ -64,7 +64,7 @@ body {
 
 .about-me img {
   position: relative;
-  height: 50%;
+  height: 70%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -112,11 +112,15 @@ body {
 }
 
 .skills ul li p {
+  background-color: #03599c;
+  border-radius: 50px;
   color: white;
   font-size: 32px;
 }
 
 .projects {
+  background-image: url("images/project.png");
+  background-size: cover;
   position: relative;
   display: flex;
   height: 100vh;
@@ -125,9 +129,10 @@ body {
   text-align: center;
 }
 .project-details {
+  font-family: "Silkscreen", cursive;
   display: flex;
   align-items: center;
-  height: auto;
+  width: 50%;
   text-align: center;
 }
 
@@ -154,11 +159,22 @@ a:active {
   height: 60vh;
 }
 
+.project-details ul li p {
+  background-color: black;
+  color: white;
+}
+
+.project-name {
+  width: auto;
+}
+
 .foot {
   display: flex;
   flex-direction: row;
   justify-content: center;
   text-align: center;
+  background-color: darkgrey;
+  height: 28vh;
 }
 
 .foot ul {
@@ -166,8 +182,15 @@ a:active {
   position: relative;
   display: flex;
   justify-content: space-between;
-  width: 30%;
+  width: 40%;
   align-items: center;
   text-align: center;
   list-style: none;
+}
+
+.credits {
+  text-align: center;
+  font-size: 25px;
+  margin: 0;
+  background-color: darkgrey;
 }
