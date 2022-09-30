@@ -142,3 +142,22 @@ a:active {
 .project-details ul li img {
   height: 50vh;
 }
+
+.foot {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  background-color: grey;
+}
+
+.foot ul {
+  margin-top: 50px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  align-items: center;
+  text-align: center;
+  list-style: none;
+}
