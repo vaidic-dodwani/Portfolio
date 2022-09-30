@@ -55,7 +55,8 @@ body {
 .about-me {
   display: flex;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  height: fit-content;
   justify-content: center;
 }
 
@@ -73,7 +74,8 @@ body {
 
 .about-me img {
   position: relative;
-  height: 70%;
+  height: auto;
+  width: 30%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -84,11 +86,21 @@ body {
   margin-left: 1rem;
   color: white;
   font-family: "Silkscreen", cursive;
-  font-size: 50px;
+  font-size: 3.125em;
   display: block;
   width: 40%;
   margin-right: 10vw;
   text-align: center;
+}
+@media only screen and (max-width: 500px) {
+  .about-me {
+    flex-direction: column;
+  }
+
+  .about-me img {
+    height: 100%;
+    width: 100%;
+  }
 }
 
 .skills {
@@ -99,15 +111,16 @@ body {
   text-align: center;
   justify-content: center;
   min-height: 100vh;
-  height: fit-content;
-  width: 100%;
+  height: auto;
+  overflow: hidden;
 }
 
 .skills ul {
-  position: absolute;
-  bottom: 25vh;
+  position: relative;
   display: flex;
   justify-content: space-around;
+  min-height: 100%;
+  height: fit-content;
   width: 100%;
   list-style: none;
   padding: 0;
@@ -120,7 +133,6 @@ body {
 
 .skills ul li img {
   height: 30vh;
-  width: 100%;
 }
 
 .skills ul li p {
@@ -130,6 +142,13 @@ body {
   color: white;
   font-size: 32px;
 }
+
+@media only screen and (max-width: 1000px) {
+  .skills ul {
+    flex-flow: column;
+  }
+}
+
 .projects {
   background-image: url("images/project.png");
   background-size: cover;
