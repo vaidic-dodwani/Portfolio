@@ -56,21 +56,19 @@ body {
   display: flex;
   align-items: center;
   height: 100vh;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .head {
+  margin: 0;
   font-family: "Pacifico", cursive;
-  width: auto;
-  position: absolute;
+  position: relative;
   font-size: 40px;
   text-decoration: none;
-  align-items: center;
-  text-align: center;
-  margin-top: 0.625rem;
   color: white;
   background-color: black;
   border-radius: 1.25rem;
+  width: fit-content;
 }
 
 .about-me img {
@@ -88,7 +86,7 @@ body {
   font-family: "Silkscreen", cursive;
   font-size: 50px;
   display: block;
-  width: 40vw;
+  width: 40%;
   margin-right: 10vw;
   text-align: center;
 }
@@ -97,10 +95,11 @@ body {
   background-image: url("images/skills.png");
   background-size: cover;
   position: relative;
-  display: flex;
+  display: block;
   text-align: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
+  height: fit-content;
   width: 100%;
 }
 
@@ -131,7 +130,6 @@ body {
   color: white;
   font-size: 32px;
 }
-
 .projects {
   background-image: url("images/project.png");
   background-size: cover;
@@ -179,16 +177,17 @@ a:active {
 }
 
 .projects ul li img {
-  height: 60vh;
+  max-width: 100%;
+  width: 50%;
+  max-height: 100%;
+  height: 50%;
 }
 
 .projects ul li p {
   font-size: 25px;
   width: fit-content;
   background-color: black;
-
   text-align: center;
-
   color: white;
 }
 
@@ -197,8 +196,8 @@ a:active {
 }
 
 .foot {
-  display: flex;
-  flex-direction: row;
+  display: block;
+  align-items: center;
   justify-content: center;
   text-align: center;
   background-color: white;
@@ -206,14 +205,18 @@ a:active {
 }
 
 .foot ul {
-  margin-top: 6.25rem;
-  position: relative;
   display: flex;
+  margin-top: 2rem;
+  position: relative;
   justify-content: space-between;
   width: 40%;
   align-items: center;
   text-align: center;
   list-style: none;
+}
+
+.foot ul li img {
+  width: 100%;
 }
 
 .foot ul li:hover {
